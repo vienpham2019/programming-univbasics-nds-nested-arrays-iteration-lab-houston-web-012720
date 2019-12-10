@@ -22,11 +22,11 @@ def find_greater_pair(src)
   new_arr = []
   row_index = 0
   while row_index < src.count do
-    element_index = 0
-    while element_index < src[row_index].count do
-      if src[row_index][element_index].max
-        new_arr << src[row_index][element_index]
-      end
+    max_num = src[row_index].sort
+    new_arr << max_num[-1]
+    row_index += 1
+  end
+  return new_arr
 end
 
 def total_even_pairs(src)
