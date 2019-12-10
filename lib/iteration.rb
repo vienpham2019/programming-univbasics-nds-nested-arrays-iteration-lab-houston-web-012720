@@ -9,8 +9,7 @@ def join_ingredients(src)
   row_index = 0
   new_arr = []
   while row_index < src.count do
-    my_str = "I love #{src[row_index][0]} and #{src[row_index][1]} on my pizza"
-    new_arr << my_str
+    new_arr << "I love #{src[row_index][0]} and #{src[row_index][1]} on my pizza"
     row_index += 1
   end
   return new_arr
