@@ -13,6 +13,7 @@ def join_ingredients(src)
     new_arr << my_str
     row_index += 1
   end
+  return new_arr
 end
 
 def find_greater_pair(src)
